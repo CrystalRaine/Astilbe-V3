@@ -1,0 +1,14 @@
+Help: 
+  Show this list
+
+Delete:
+  Deletes a file
+
+Delete Folder:
+  Deletes a folder
+
+Settings:
+  Show the settings file for the selected folder
+
+Make Default:
+  Sets a page as the default to open for a folder
