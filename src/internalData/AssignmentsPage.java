@@ -133,13 +133,13 @@ public class AssignmentsPage extends FileAbstract {
 		JTextField date = new JTextField();
 		int m = java.time.LocalDate.now().getDayOfMonth();
 		int d = java.time.LocalDate.now().getMonthValue();
-		date.setText(m < 10 ? "0" + m : m + "/" + (d < 10 ? "0" + d : d) + "/" + java.time.LocalDate.now().getYear());
+		date.setText((m < 10 ? "0" + m : m) + "/" + (d < 10 ? "0" + d : d) + "/" + java.time.LocalDate.now().getYear());
 		
 		date.setBackground(themeBackground);
 		date.setForeground(themeForeground);
 		date.setBorder(BorderFactory.createEmptyBorder(0,5,0,5));
-		sideData.add(Window.encase(date,-1,30));
-
+		sideData.add(Window.encase(date,-1,300));
+		
 		JButton btn = new JButton();
 		btn.setBackground(themeAccent);
 		btn.setForeground(themeBackground);

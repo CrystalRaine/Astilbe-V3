@@ -78,7 +78,6 @@ public class Folder extends FolderAbstract {
 		contentPane.repaint();
 		
 		File f = new File(filepath);
-		System.out.println(!filepath.substring(filepath.length()-4).equals(".inv"));
 		if(!filepath.substring(filepath.length()-4).equals(".inv")) {
 			if(isHidden()) {
 				File g = new File(filepath + ".inv");
